@@ -1,0 +1,19 @@
+Anatomi Elemen HTML
+
+--> Apa Itu Elemen HTML
+    -   Elemen adalah salah satu bagian dari HTML dalam membangun halaman web
+    -   Bisa menggunakan elemen paragraf
+        <p>elemnt paragraf</p>
+
+--> Elemen HTML terdapat dua tag, yaitu tag pembuka <> dan tag penutup </>
+    -   Tage pembuka: Berisi nama dari elemen yang akan dibuat dan dibungkus dengan tanda kurung siku(<>)
+                      Contohnya adalah <p> untuk membuat elemen paragraf
+    -   Konten: Konten dari elemen. Contohnya teks sebagai konten dari elemen paragraf
+    -   Tag penutup: Mirip seperti tag pembuka, tetapi terdapat garis miring sebelum nama elemennya. 
+                     Ini menandakan akhir dari elemen HTML
+
+- Elemen dalam Elemen 
+-  elemen dapat memiliki elemen lain di dalamnya atau biasa disebut dengan child-element
+<p>
+    <strong>HTML</strong> merupakan <i>markup language</i> untuk halaman web 
+</p>

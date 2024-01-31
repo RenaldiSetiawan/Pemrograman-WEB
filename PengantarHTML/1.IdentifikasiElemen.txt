@@ -1,0 +1,19 @@
+--> Pada berkas index.html, silakan tambahkan struktur dasar dokumen HTML
+    <!DOCTYPE html>
+    <html>
+    <head></head>
+    <body>   
+    
+    </body>
+    </html>
+
+--> untuk memperlengkap dokumen ini, kita akan melengkapi elemen dalam elemen <head>\
+    <!DOCTYPE html><html>
+    <head>
+        <meta charset="utf-8">
+        <title>Halaman Profil Bandung</title>
+    </head>
+    <body>
+        <!-- Kode lainnya disembunyikan... -->
+    </body>
+    </html>

@@ -1,0 +1,66 @@
+Anatomi Dokumen HTML
+
+-   Dokumen HTML memerlukan struktur dasar untuk menampilkan halaman web dengan baik
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Judul Halaman</title>
+</head>
+<body>
+    <h1>Heading Utama</h1>
+    <p>Sebuah Paragraf.</p>
+</body>
+</html>
+
+-   Doctype HTML
+    doctype dimaksudkan sebagai format atau versi HTML dan berisi sekumpulan aturan-aturan yang perlu diikuti dalam membangun halaman web yang baik
+
+-   Sekarang, kita dapat menggunakan HTML versi 5 dengan cara yang sangat mudah dan valid
+    <!DOCTYPE html>
+
+-   Elemen <html>
+    Elemen ini digunakan untuk memberitahu browser bahwa ia merupakan sebuah berkas HTML sekaligus menjadi root dari halaman web
+
+-   Elemen <head>
+    berfungsi sebagai tempat disimpannya informasi dari dokumen HTML
+    informasi dapat berupa elemen meta, style, favicon, atau link
+
+    beberapa contoh elemen yang biasanya diletakkan dalam elemen
+        <title> 
+        <style>
+        <base>
+        <link>
+        <meta>
+        <script>
+        <noscript>
+
+-   Elemen <body>
+    Setiap konten atau elemen dalam elemen <body> akan ditampilkan dalam halaman web
+    Elemen apa pun, baik gambar, judul, daftar barang, paragraf, dsb., yang diletakkan dalam elemen ini akan muncul. 
+    Bahkan, teks yang tak dibungkus oleh elemen sekalipun
+
+    Seluruh konten yang dituliskan pada body akan ditampilkan
+
+    Namun, ada kode yang tidak akan ditampilkan
+    Semua yang dituliskan di antara tag komentar tidak akan memberikan pengaruh apa pun
+    <!-- Ini merupakan sebuah komentar -->
+
+-   Lorem Ipsum Generator
+    Lorem ipsum adalah teks standar yang ditempatkan untuk mendemonstrasikan elemen grafis atau presentasi visual, seperti font, tipografi, dan tata letak
+
+    Tujuan penggunaan lorem ipsum
+        1.  Sebagai pengisi sementara jika belum ada konten teks
+        2.  Jika ingin menunjukkan hasil website sementara yang mana audiens diharapkan lebih fokus kepada elemen desain yang dipresentasikan, bukan pada isinya (teks)
+    
+    Cara untuk membuat teks lorem ipsum
+        1.  Menggunakan Microsoft Wor
+            ketiklah kode berikut,  =lorem()
+
+            juga dapat mengatur jumlah teks yang muncul dengan cara ketik kode berikut
+            =lorem("angka_paragraf", "angka_kalimat_pada_setiap_paragraf")
+        
+        2.  Generator Online
+            Tersedia banyak situs generator lorem ipsum gratis, seperti
+            https://id.lipsum.com/
+            https://loremipsum.io/

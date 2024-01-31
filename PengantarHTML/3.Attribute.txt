@@ -1,0 +1,33 @@
+Attribute di Elemen HTML
+
+-   Atribut dapat memberi informasi-informasi tambahan untuk elemen HTML
+-   nformasi ini tidak akan tampil dalam halaman web, tetapi ia dapat menentukan perilaku elemen biasanya.
+
+-   Contohnya, ada satu elemen yang berfungsi untuk menampilkan gambar sebagai konten halaman web
+-   kita perlu menyertakan informasi pada elemen tersebut, yaitu alamat dari gambar yang akan ditampilkan
+    <img src="/lokasi/dari/berkas/gambar/foto.jpg">
+    -   src menentukan lokasi gambar yang akan ditampilkan pada halaman web
+
+<p class="example">Ini adalah teks dalam element parahraf</p>
+-   atribut class. Secara singkat, atribut ini merupakan sebuah nama identitas yang digunakan untuk menargetkan elemen dengan kode styling
+
+-   dua hal yang dilakukan untuk menambahkan atribut pada elemen HTML, yaitu nama atribut dan nilainya
+-   Terkait nilainya, Anda dapat menulisnya dengan membungkus dengan tanda kutip satu atau dua setelah karakter sama dengan (=)
+
+-   beberapa atribut yang tersedia di HTML
+        Attribute       |   Description
+    -   accesskey       |   Menentukan tombol shortcut untuk mengaktifkan/memfokuskan pada sebuah element
+    -   class           |   Menentukan satu atau lebih classname untuk sebuah elemen
+    -   contenteditable |   Menentukan konten dari elemen merupakan konten yang dapat diubah atau tidak
+    -   data-*          |   Menyimpan sebuah data pribadi khusus ke halaman atau aplikasi
+    -   dir             |   Menentukan arah teks untuk konten pada suatu elemen
+    -   draggable       |   Menentukan suatu elemen dapat di-drag atau tidak
+    -   dropzone        |   Menentukan data yang di-drag adalah data yang disalin, dipindahkan, atau ditautkan saat dijatuhkan
+    -   hidden          |   Menentukan suatu elemen ditampilkan atau tidak pada browser
+    -   id              |   Menetapkan id pada elemen.
+    -   lang            |   Menentukan bahasa pada konten elemen
+    -   spellcheck      |   Menentukan elemen harus diperiksa ejaannya dan tata bahasanya atau tidak
+    -   style           |   Menentukan styling secara satu baris untuk suatu elemen
+    -   tabindex        |   Menentukan urutan dari suatu elemen
+    -   title           |   Menentukan informasi tambahan tentang suatu elemen
+    -   translate       |   Menentukan konten elemen harus diterjemahkan atau tidak
