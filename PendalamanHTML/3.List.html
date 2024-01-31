@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- LIST -->
+    <!-- tidak semua teks dibungkus oleh paragraf, salah satunya list -->
+    <!-- Pada HTML terdapat tiga tipe list.
+            1.  Unordered lists: daftar yang ditampilkan tidak memiliki urutan
+            2.  Ordered lists: daftar yang ditampilkan secara terurut
+            3.  Description lists: daftar yang terbuat dari beberapa istilah diikuti dengan deskripsi dari istilah tersebut -->
+
+    <!-- Unordered List -->
+    <!-- unordered list merupakan daftar yang tidak mementingkan urutan -->
+    <!-- Standarnya, unordered list menampilkan bullet pada tiap item list-nya (tetapi kita bisa mengubahnya dengan styling) -->
+
+    <!-- Gunakan <ul></ul> kemudian di dalam elemen tersebut kita gunakan tags <li></li> untuk menetapkan item pada list tersebut  -->
+    <ul>
+      <li>Unordered List 1</li>
+      <li>Unordered List 2</li>
+      <li>Unordered List 3</li>
+      <li>Unordered List 4</li>
+    </ul>
+
+    <!-- Di antara tag elemen <li>, 
+         dapat mengisikan konten apa pun termasuk elemen HTML lain -->
+    <ul>
+      <li><h1>Sebuah Heading sebagai item list</h1></li>
+      <li><h2>Sebuah Heading level 2 sebagai item list</h2></li>
+      <li><p>Sebuah paragraf sebagai item list</p></li>
+    </ul>
+
+    <!-- juga bisa menambahkan elemen <ul> lagi dalam list item untuk membuat nested list -->
+    <ul>
+      <li>List Item 1</li>
+      <li>List Item 2</li>
+      <li>
+        List Item 3
+        <ul>
+          <li>1</li>
+          <li>2</li>
+          <li>3</li>
+        </ul>
+      </li>
+      <li>List Item 3</li>
+    </ul>
+
+    <hr />
+    <!-- Ordered List -->
+    <!-- untuk membuat list yang mementingkan urutan -->
+    <!-- iap item menampilkan angka bukan sebuah bullet -->
+    <!-- Untuk menetapkan konten sebagai ordered list kita gunakan <ol></ol> -->
+    <ol>
+      <li>Langkah pertama</li>
+      <li>Langkah kedua</li>
+      <li>Langkah ketiga</li>
+      <li>Langkah selanjutnya</li>
+    </ol>
+
+    <!-- tipe urutan angkanya dapat kita atur melalui sebuah atribut type -->
+    <!-- Contohnya, selain nomor, urutan angka dapat diganti dengan alfabet ataupun angka romawi -->
+    <ol type="I">
+      <li>Langkah pertama</li>
+      <li>Langkah kedua</li>
+      <li>Langkah ketiga</li>
+      <li>Langkah selanjutnya</li>
+    </ol>
+
+    <ol type="A">
+      <li>Langkah pertama</li>
+      <li>Langkah kedua</li>
+      <li>Langkah ketiga</li>
+      <li>Langkah selanjutnya</li>
+    </ol>
+
+    <!-- menetapkan nilai awal pada sebuah ordered list dengan menggunakan atribut start -->
+    <!-- jika kita ingin memulai sebuah list dari angka 7 -->
+    <ol start="7">
+      <li>Langkah ketujuh</li>
+      <li>Langkah kedelapan</li>
+      <li>Langkah kesembilan</li>
+      <li>Langkah selanjutnya</li>
+    </ol>
+
+    <!-- menambahkan atribut reversed pada elemen <ol> untuk membuat urutan dalam sebuah list terbalik -->
+    <!-- Atribut ini hanya menandakan sebuah list untuk membalikkan urutan angka pada tiap item-nya -->
+    <ol start="7" reversed>
+      <li>Langkah ketujuh</li>
+      <li>Langkah kedelapan</li>
+      <li>Langkah kesembilan</li>
+      <li>Langkah selanjutnya</li>
+    </ol>
+  </body>
+</html>
