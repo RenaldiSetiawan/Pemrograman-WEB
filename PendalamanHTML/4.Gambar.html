@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Gambar -->
+    <!-- Pada HTML untuk menampilkan sebuah gambar kita bisa menggunakan tag <img> -->
+    <!-- untuk menetapkan gambar yang ditampilkan kita gunakan sebuah atribut -->
+    <img
+      src="https://i.pinimg.com.jpg"
+      alt="Image Not Open"
+    >
+
+    <!-- elemen <img> merupakan sebuah elemen kosong (tidak memiliki konten sehingga tidak ada closing tag) -->
+    <!-- atribut src. 
+         Atribut ini berfungsi sebagai sumber dari gambar yang ditampilkan 
+         dapat bernilai url gambar atau path gambar local dari gambar -->
+    <!-- Atribut alt. A
+         atribut ini sebenarnya tidak wajib untuk diterapkan, hanya saja atribut ini akan sangat berguna ketika gambar tidak berhasil ditampilkan.
+         Jadi, ketika gambar gagal ditampilkan akan memunculkan teks alternatif yang dapat mewakili arti dari gambar tersebut -->
+    <!-- title. 
+         Ia berfungsi sebagai informasi tambahan untuk sebuah gambar. 
+         Informasi tersebut akan muncul ketika kita mengarahkan sebuah kursor pada gambar yang ditampilkan -->
+
+    <!-- Format Gambar
+         .gif : Untuk gambar animasi, Ukuran file biasanya kecil, Kualitas gambar terbatas
+         jpg, .jpeg, .jfif, .pjpeg, .pjp : Kualitas teks pada gambar dapat menjadi buruk
+                                           Ukuran file lumayan kecil
+                                           Pada website biasanya digunakan untuk gambar yang tidak banyak teks
+         .png : Teks lebih bisa terbaca dibandingkan jenis jpeg
+                Ukuran file dapat menjadi besar sehingga mengurangi kecepatan memuat situs
+         .webp : ukuran file pada webp dapat menjadi lebih kecil, tidak semua web browser dapat membaca webp
+         .svg  : Kualitas gambar terjaga dan ukuran file kecil.
+                 tidak cocok untuk gambar foto
+                 biasanya digunakan untuk logo atau ikon -->
+
+    <!-- Mengatur Ukaran Gambar -->
+    <!-- lebar gambar - atribut width dan tinggi - atribut height. -->
+    <img
+      src="https://i.pinimg.com/564x/bf/d9/85/bfd9852bcb6cc4c069b010d2dfeec9d7.jpg"
+      alt="Image Not Open"
+      height="100px"
+    >
+
+    <!-- gambar tersimpan secara lokal–tersimpan dalam satu folder proyek, kita dapat memanggil sumber gambar tersebut menggunakan relative URL -->
+    <img
+        src="assets/img/download.jpeg"
+        alt="name img"
+        height="100px"
+    >
+  </body>
+</html>
