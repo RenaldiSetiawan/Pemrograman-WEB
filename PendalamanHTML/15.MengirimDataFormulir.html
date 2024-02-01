@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Mengirim Data Formulir -->
+    <!-- Ada satu elemen yang berfungsi sebagai wrapper (pembungkus) dari keseluruhan kolom input atau formulir. 
+    Elemen yang dimaksud adalah <form></form> -->
+    <form>
+      <div>
+        <label for="email">Email</label>
+        <br />
+        <input type="email" id="email" />
+      </div>
+
+      <div>
+        <label for="password">Password</label>
+        <br />
+        <input type="password" id="password" />
+      </div>
+
+      <button type="submit">Submit</button>
+    </form>
+
+    <hr />
+    <br />
+    <!-- Atribut Name di Elemen Input -->
+    <!-- Dalam mengirimkan data ke server, kita wajib menerapkan atribut name pada seluruh kolom input dalam formulir -->
+    <form>
+      <div>
+        <label for="fullName">Nama</label>
+        <input id="fullName" name="fullName" required />
+      </div>
+
+      <div>
+        <label for="checkIn">Tanggal Check-In</label>
+        <input type="date" id="checkIn" name="checkIn" required />
+      </div>
+
+      <div>
+        <label for="checkOut">Tanggal Check-Out</label>
+        <input type="date" id="checkOut" name="checkOut" required />
+      </div>
+
+      <button type="submit">Submit</button>
+    </form>
+
+    <!-- Cara Membawa Data Formulir -->
+    <!-- Elemen form memiliki atribut-atribut khusus yang menentukan konfigurasi request untuk dikirimkan ketika user menekan tombol submit -->
+    <!-- Ada dua atribut: action dan method. -->
+
+    <!-- Atribut Action -->
+    <!-- Atribut action akan menentukan alamat tujuan dari pengiriman data. -->
+    <!-- bisa memberikannya URL yang mengarah pada suatu server atau kadang disebut sebagai API -->
+    <form action="https://example.com/jalur/ke/alamat/destinasi">
+      <!-- Berbagai macam kolom input -->
+    </form>
+
+    <!-- Atribut Method -->
+    <!-- Atribut ini akan menentukan cara data dikirimkan ke server -->
+    <!-- untuk mengirimkan data pada formulir HTML, yaitu GET dan POST -->
+    <!-- Metode GET -->
+    <!-- digunakan untuk mendapatkan data dari server -->
+    <form method="GET" action="https://example.com/">
+      <!-- Kolom input login disembunyikan -->
+    </form>
+
+    <!-- Metode POST -->
+    <!-- untuk mengirimkan data dari browser ke server -->
+    <form method="POST" action="https://example.com/">
+      <!-- Kolom input login disembunyikan -->
+    </form>
+  </body>
+</html>
