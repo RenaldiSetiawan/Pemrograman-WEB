@@ -1,0 +1,19 @@
+h1 {
+  color: green;
+}
+ 
+p {
+  font-size: small;
+  font-family: sans-serif;
+}
+
+/* terdapat dua bagian pada sebuah rule 
+    1.  elemen yang akan menerapkan rule (singkatnya kita akan sebut selector)
+    2.  deklarasi atau instruksi yang akan diterapkan pada sebuah selector */
+
+/* Selector 
+  -  <h1> dan <p> digunakan sebagai selector */
+
+/* Declarations
+  - deklarasi terdiri dari pasangan properti dengan nilainya
+  - menetapkan lebih dari satu deklarasi pada satu rule; contohnya seperti pada selector p di atas */
