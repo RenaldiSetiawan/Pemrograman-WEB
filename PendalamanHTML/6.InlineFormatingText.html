@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Inline Formatting Text: Anchor, Emphasized Text, Important Text, dan Short Quotation -->
+    <!-- elemen HTML memiliki dua sifat -->
+    <!-- block dan inline -->
+    <!-- Elemen yang bersifat block selalu membuat baris baru ketika di-render. Contohnya seperti elemen paragraf, list, heading, dan lainnya -->
+    <!-- lemen inline. tidak menambahkan baris baru ketika di-render -->
+
+    <!-- Anchor -->
+    <!-- elemen yang digunakan untuk membuat sebuah hyperlink ke halaman atau website lain, file, alamat email, atau URL lainnya -->
+    <!-- gunakan <a> sebagai tag pembuka dan </a> sebagai tag penutup -->
+    <h1>Anchor Elemet</h1>
+    <p>Hubungi kami di</p>
+    <ul>
+      <li><a href="https://example.com">Website</a></li>
+      <li><a href="mailto:info@example.com">Email</a></li>
+      <li><a href="tel:+62123456">Telepon</a></li>
+      <li><a href="#address">Alamat</a></li>
+    </ul>
+    <!-- Atribut        |   Nilai           | Desc
+         download       |   filename        | untuk mengunduh pada URL yang ditetapkan daripada mengarahkannya
+         href           |   URL             | Menetapkan target yang akan diarahkan/unduh ketika pengguna menekan hyperlink
+         hreflang       |   language_code   | Menetapkan bahasa dari dokumen target
+         ping           |   list_of_URLs    | Menetapkan URL yang akan diberitahu dengan mengirimkan post request ping pada body oleh browser (berjalan di belakang layar) ketika target URL pada hyperlink ditekan
+         referrerpolicy |   no-referrer     | Menetapkan referensi untuk dikirim pada target
+                            no-referrer-when-downgrade,
+                            origin,
+                            origin-when-cross-origin,
+                            unsafe-url
+         rel            |   alternate       | Menetapkan hubungan antara halaman yang ditampilkan dengan target
+                            author
+                            bookmark
+                            external
+                            help
+                            license
+                            next
+                            nofollow
+                            noreferrer
+                            noopener
+                            prev
+                            search
+         target         |   _blank,          | Menetapkan lokasi ketika membuka target contohnya pada sebuah tab, window, atau tab itu sendiri
+                            _parent,
+                            _self,
+                            _top
+         media          |   media_type       | Menetapkan tipe media yang digunakan pada target.
+     -->
+    <hr />
+
+    <!-- Emphasized Text -->
+    <!-- elemen <em> untuk menunjukkan bagian kata yang perlu kita tekankan -->
+    <!-- Elemen ini menunjukkan stress emphasis atau konten/kata yang perlu mendapatkan penekanan atau perhatian khusus -->
+    <h1>Emphasized Text</h1>
+    <p><em>Oding</em> adalah seorang pelajar</p>
+    <p>Dia adalah seorang <em>pelajar</em></p>
+
+    <hr />
+    <!-- Important Text -->
+    <!-- elemen <strong> untuk menunjukkan sebuah teks yang begitu penting (strong importance), serius ataupun mendesak -->
+    <h1>Important Text</h1>
+    <p>
+      Kesehatan merupakan hal yang penting, jaga pola makan yang teratur dan
+      <strong>jangan sampai makan tengah malam!</strong>
+    </p>
+
+    <hr />
+    <!-- Short Quotations -->
+    <!-- elemen <q> untuk menandai sebuah kutipan dalam sebuah teks -->
+    <!-- digunakan untuk kutipan pendek yang terletak di dalam baris (inline) -->
+    <h1>Short Quotations</h1>
+    <p>
+      Sebelum pulang kerja, ia berkata kepadaku:
+      <q>Maaf saya tidak bisa hadir dalam pertemuan nanti</q>
+    </p>
+
+    <!-- Elemen quotation marks memiliki atribut cite untuk menentukan sumber URL dari sebuah kutipan (jika kutipan tersebut bersumber dari sebuah situs website) -->
+    <p>
+      Dilansir dari website Mozilla,
+      <q cite="https://www.mozilla.org/en-US/about/history/details/"
+        >Firefox 1.0 diluncurkan pada 2004 dan menjadi produk yang sukses.</q
+      >
+    </p>
+  </body>
+</html>
