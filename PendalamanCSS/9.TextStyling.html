@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      .decoration-none {
+        text-decoration: none;
+      }
+
+      main {
+        font-family: sans-serif;
+      }
+
+      .transform-none {
+        text-transform: none;
+      }
+
+      .transform-capitalize {
+        text-transform: capitalize;
+      }
+
+      .transform-lowercase {
+        text-transform: lowercase;
+      }
+
+      .transform-uppercase {
+        text-transform: uppercase;
+      }
+
+      .letter-spacing {
+        letter-spacing: 4px;
+      }
+
+      .word-spacing {
+        word-spacing: 1.5em;
+      }
+
+      /* Font shadow */
+      div {
+        font-size: 2rem;
+      }
+
+      .one {
+        text-shadow: 2px 2px 0px #000000;
+        background-color: #eeeeee;
+        color: #666666;
+      }
+
+      .two {
+        text-shadow: 4px 4px 3px #666666;
+        background-color: #dddddd;
+        color: #666666;
+      }
+
+      .three {
+        text-shadow: 4px 4px 7px #111111;
+        background-color: #cccccc;
+        color: #ffffff;
+      }
+
+      .four {
+        text-shadow: -2px -2px #666666;
+        background-color: #cccccc;
+        color: #bbbbbb;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Text Styling: Text Decoration, Text Transform, Word-Letter Spacing, dan Text Shadow -->
+
+    <!-- Text Decoration -->
+    <!-- text-decoration, kita dapat menghilangkan efek underline pada link yang ditampilkan dengan memberikan nilai text-decoration: none pada elemen <a></a> -->
+    <h1>Text Decoration</h1>
+    <main>
+      <p>
+        <a href="#">Teks pada elemen anchor biasa</a>
+      </p>
+
+      <p>
+        <a href="#" class="decoration-none">
+          Teks pada elemen anchor biasa yang menerapkan text-decoration: none
+        </a>
+      </p>
+    </main>
+
+    <!-- Text Transform -->
+    <!-- menerapkan properti text-transform pada elemen teks, kapitalisasi akan berubah ketika halaman di-render tanpa harus mengubahnya pada dokumen HTML -->
+    <h1>Text Transform</h1>
+    <main>
+      <p class="transform-none">
+        Text transform digunakan untuk mengatur kapitalisasi pada teks.
+      </p>
+
+      <p class="transform-capitalize">
+        Text transform digunakan untuk mengatur kapitalisasi pada teks.
+      </p>
+
+      <p class="transform-lowercase">
+        Text transform digunakan untuk mengatur kapitalisasi pada teks.
+      </p>
+
+      <p class="transform-uppercase">
+        Text transform digunakan untuk mengatur kapitalisasi pada teks.
+      </p>
+    </main>
+
+    <!-- Word and Letter Spacing -->
+    <!-- mengatur spasi atau jarak pada teks -->
+    <!-- Letter-spacing digunakan untuk mengatur jarak antar huruf -->
+    <!-- word-spacing digunakan untuk mengatur jarak antar kata -->
+    <h1>Word and Letter Spacing</h1>
+    <main>
+      <p class="letter-spacing">
+        Bandung, Kota metropolitan terbesar di Provinsi Jawa Barat.
+      </p>
+      <p class="word-spacing">
+        Bandung, Kota metropolitan terbesar di Provinsi Jawa Barat.
+      </p>
+    </main>
+
+    <!-- Text Shadow -->
+    <!-- membuat bayangan pada teks (atau biasa disebut drop shadow) -->
+    <h1>Text Shadow</h1>
+    <main>
+        <div >
+            <p class="one">
+                Bandung, Kota metropolitan terbesar di Provinsi Jawa Barat.
+              </p>
+        
+              <p class="two">
+                Bandung, Kota metropolitan terbesar di Provinsi Jawa Barat.
+              </p>
+        
+              <p class="three">
+                Bandung, Kota metropolitan terbesar di Provinsi Jawa Barat.
+              </p>
+        
+              <p class="four">
+                Bandung, Kota metropolitan terbesar di Provinsi Jawa Barat.
+              </p>
+        </div>
+    </main>
+  </body>
+</html>
