@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pseudo Selector</title>
+
+    <style>
+      /* rule akan diterapkan pada sebuah tautan yang belum pernah dikunjungi */
+      a:link {
+        color: red;
+      }
+
+      /* rule akan diterapkan pada sebuah tautan yang sudah pernah dikunjungi */
+      a:visited {
+        color: green;
+      }
+
+      /* rule akan diterapkan pada sebuah tautan ketika diarahkan dengan kursor */
+      a:hover {
+        color: rgb(247, 90, 116);
+      }
+
+      /* rule akan diterapkan pada sebuah tautan ketika ditekan */
+      a:active {
+        color: orange;
+      }
+
+      blockquote::before,
+      blockquote::after {
+        content: '"';
+        font-size: 24px;
+        font-style: italic;
+        font-weight: bold;
+      }
+
+      /* Rule styling akan diterapkan pada karakter pertama di sebuah paragraf */
+      p::first-letter {
+        font-size: 32px;
+        font-weight: bold;
+        color: saddlebrown;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Pseudo-class Selector -->
+    <!-- Pseudo-class merupakan sebuah class “semu” yang sebenarnya ada pada tiap elemen HTML -->
+    <!-- menetapkan rule hanya ketika sebuah tautan telah dikunjungi 
+        (:visited) -->
+    <!-- ketika sebuah elemen diarahkan dengan kursor (:hover) -->
+
+    <!-- Untuk menggunakan pseudo-class, kita gunakan tanda titik dua (:) pada basic selector dan diikuti dengan pseudo-class-nya -->
+    <H1>Pseudo-class Selector</H1>
+    <p>
+      Dapatkan pekerjaan impian di
+      <a target="_blank" href="https://jobs.com/"> Dicoding Jobs </a>.
+    </p>
+
+    <!-- Pseudo-elemen Selector -->
+    <!-- Pseudo-element yang dimaksud adalah ::before dan ::after -->
+    <H1>Pseudo-elemen Selector</H1>
+    <blockquote>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eius error
+      explicabo ipsum molestiae necessitatibus nesciunt possimus reprehenderit
+      sed voluptates. Aliquam aspernatur autem est nobis officia praesentium
+      quas recusandae rem.
+    </blockquote>
+
+    <!-- pseudo-element lainnya yang dapat menentukan rule pada awal karakter konten elemen -->
+    <p>Lorem ipsum dolor sit amet</p>
+  </body>
+</html>
