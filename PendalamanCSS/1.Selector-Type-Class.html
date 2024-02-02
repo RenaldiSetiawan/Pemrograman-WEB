@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Type Selector, dan Class Selector</title>
+    <style>
+      span {
+        color: red;
+      }
+      .red {
+        color: red;
+      }
+
+      .skyblue-bg {
+        background-color: skyblue;
+      }
+
+      .fancy {
+        font-weight: bold;
+        text-shadow: 4px 4px 3px #77f;
+      }
+
+      /* Menargetkan seluruh tipe elemen */
+      * {
+        color: green;
+      }
+
+      /* Menargetkan seluruh tipe elemen yang mengandung nilai "en" pada atribut lang */
+      *[lang^="en"] {
+        font-style: italic;
+      }
+
+      /* Menargetkan seluruh tipe elemen yang memiliki nilai "warning" pada atribut class */
+      *.warning {
+        color: red;
+      }
+
+      /* Menargetkan seluruh tipe elemen yang memiliki nilai "content" pada atribut id */
+      *#content {
+        border: 1px solid blue;
+        padding: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Type Selector -->
+    <!-- Type Selector menggunakan nama elemen sebagai target untuk diterapkannya rule -->
+    <span>
+      Ini merupakan sebuah teks yang berada pada elemen span. Seharusnya elemen
+      ini ditampilkan dengan warna teks merah.
+    </span>
+    <p>
+      Ini merupakan sebuah teks yang berada pada elemen paragraf, teks ini tidak
+      seharusnya tidak akan terpengaruh oleh rule.
+    </p>
+    <span>
+      Ini merupakan sebuah teks yang berada pada elemen span lainnya. Seharusnya
+      elemen ini ditampilkan dengan warna teks merah juga.
+    </span>
+
+    <hr />
+    <!-- Class Selector -->
+    <!-- Class selector menetapkan target elemen berdasarkan nilai dari atribut class yang diterapkan pada elemennya -->
+    <!-- selector-nya diawali dengan tanda titik (.) dan dilanjutkan dengan nama class-nya -->
+    <p>
+      Ini merupakan paragraf biasa atau tidak menerapkan atribut apapun. Maka
+      teks pada paragraf ini akan berwarna hijau
+    </p>
+    <p lang="en-us">
+      This is an English paragraph contains en-us value of lang attribute, so
+      this text will be green and italic.
+    </p>
+
+    <h1>Ini merupakan sebuah header biasa</h1>
+    <h1 lang="en-us">This is an English Header</h1>
+
+    <p class="warning">
+      Perhatikan paragraf ini! Paragraf ini merupakan paragraf yang memiliki
+      kelas bernilai warning, sehingga teks dari paragraf ini akan berwarna
+      merah
+    </p>
+
+    <div id="content">
+      <p>
+        Ini merupakan sebuah teks di dalam sebuah div yang memiliki id bernilai
+        "content", seharusnya paragraf ini dibungkus dalam border yang memiliki
+        padding 20px
+      </p>
+    </div>
+  </body>
+</html>
