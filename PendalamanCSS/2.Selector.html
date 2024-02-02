@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Selector Dasar</title>
+    <style>
+      #special {
+        background-color: skyblue;
+      }
+      /* <a> element yang menerapkan href attribute */
+      a[href] {
+        color: blue;
+      }
+
+      /* <a> element yang menerapkan nilai pada href dengan awalan "#" */
+      a[href^="#"] {
+        background-color: gold;
+      }
+
+      /* <a> element yang menerapkan nilai pada href yang mengandung teks "example" */
+      a[href*="example"] {
+        background-color: silver;
+      }
+
+      /* <a> element yang menerapkan nilai pada href yang mengandung teks "insensitive" tidak mementingkan huruf kapital*/
+      a[href*="insensitive" i] {
+        color: cyan;
+      }
+
+      /* <a> element yang menerapkan nilai pada href dengan akhiran ".org" */
+      a[href$=".org"] {
+        color: red;
+      }
+
+      /* Menargetkan seluruh tipe elemen */
+      * {
+        color: green;
+      }
+
+      /* Menargetkan seluruh tipe elemen yang mengandung nilai "en" pada atribut lang */
+      *[lang^="en"] {
+        font-style: italic;
+      }
+
+      /* Menargetkan seluruh tipe elemen yang memiliki nilai "warning" pada atribut class */
+      *.warning {
+        color: red;
+      }
+
+      /* Menargetkan seluruh tipe elemen yang memiliki nilai "content" pada atribut id */
+      *#content {
+        border: 1px solid blue;
+        padding: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Selector Dasar: ID Selector, Attribute Selector, dan Universal Selector -->
+
+    <!-- ID Selector -->
+    <!-- ID selector menetapkan target elemen berdasarkan nilai dari atribut id yang diterapkan pada elemennya -->
+    <!-- Untuk menetapkan selector dengan menggunakan id, kita gunakan tanda octothorpe (#) atau lebih familiar disebut dengan hash -->
+    <div id="special">
+      <p>Ini merupakan konten di dalam sebuah div yang diberi id special.</p>
+    </div>
+    <div>
+      <p>Ini merupakan konten di dalam sebuah div biasa.</p>
+    </div>
+
+    <!-- Attribute Selector -->
+    <!-- Attribute selector merupakan cara menetapkan target elemen berdasarkan sebuah atribut yang digunakan atau bahkan bisa lebih spesifik dengan nilainya -->
+    <ul>
+      <ul>
+        <li><a href="#internal">Internal link</a></li>
+        <li><a href="http://example.com">Example link</a></li>
+        <li><a href="#InSensitive">Insensitive internal link</a></li>
+        <li><a href="http://example.org">Example org link</a></li>
+      </ul>
+    </ul>
+
+    <!-- Universal Selector -->
+    <!-- Universal selector digunakan untuk diterapkan pada seluruh elemen -->
+    <!-- menargetkan sebuah elemen dengan menggabungkannya bersama selector yang lain -->
+    <p>
+      Ini merupakan paragraf biasa atau tidak menerapkan atribut apapun. Maka
+      teks pada paragraf ini akan berwarna hijau
+    </p>
+    <p lang="en-us">
+      This is an English paragraph contains en-us value of lang attribute, so
+      this text will be green and italic.
+    </p>
+  </body>
+</html>
