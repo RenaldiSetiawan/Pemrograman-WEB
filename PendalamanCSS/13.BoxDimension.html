@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      .box {
+        height: 300px;
+        width: 300px;
+        background-color: #11c5c6;
+
+        p {
+          height: 75%;
+          width: 75%;
+          background-color: #fbdd1c;
+        }
+      }
+
+      .content {
+        max-width: 800px;
+        height: 400px;
+
+        margin-left: auto;
+        margin-right: auto;
+        background-color: deeppink;
+
+        p {
+          font-size: 1.5em;
+          font-weight: bold;
+        }
+      }
+
+      .overflow {
+        height: 200px;
+        width: 200px;
+        background-color: lightgreen;
+
+        .visible {
+          overflow: visible;
+        }
+
+        .hiden {
+          overflow: hidden;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Box Model: Box Dimensions -->
+    <!-- Dimension -->
+    <!-- dapat mengatur nilai dimensi dari box tersebut dengan properti width dan height -->
+    <h1>Box Dimensions</h1>
+    <div class="box">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus officiis
+        perspiciatis quidem ratione? Distinctio eos ex expedita iusto
+        necessitatibus velit, veritatis. Aliquid, debitis dignissimos in iusto
+        magnam nulla sed tempora.
+      </p>
+    </div>
+
+    <!-- Limiting Dimension -->
+    <!-- properti min-width dan max-width -->
+    <!-- min-width: menetapkan nilai lebar minimal yang harus dimiliki elemen. -->
+    <!-- max-width: menetapkan nilai lebar maksimal yang harus dimiliki elemen. -->
+    <h1>Limit Dimension</h1>
+    <div class="content">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate
+        eius explicabo fuga iusto magni minus odit praesentium, quasi quisquam
+        quos repellat suscipit tempora tenetur? Assumenda cum laborum officiis
+        quos ratione.
+      </p>
+    </div>
+
+    <!-- Overflowing Content -->
+    <!-- Dimensi box yang dihasilkan elemen selalu cukup untuk menampung konten, tetapi hal ini tidak berlaku jika kita tetapkan secara manual panjang dan lebarnya -->
+    <h1>Overflowing Content</h1>
+    <div class="overflow">
+      <div class="visible">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab
+          accusantium amet corporis cupiditate dignissimos error expedita
+          explicabo facere facilis, ipsam itaque libero modi officiis optio
+          perspiciatis provident quam sequi voluptatem.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. At aut
+          corporis facere harum inventore iure, quisquam recusandae
+          reprehenderit veritatis voluptatum. Ducimus exercitationem illo nam
+          sapiente suscipit, tenetur ullam ut voluptas!
+        </p>
+      </div>
+    </div>
+    <!-- Visible merupakan nilai default pada properti ini. 
+        Konten yang tidak tertampung (overflow) akan tetap ditampilkan seperti pada standarnya. -->
+
+    <!-- hidden
+        Jika terjadi overflow, konten yang tidak tertampung akan disembunyikan. -->
+
+    <!-- scroll
+        Memunculkan scroll bar pada pinggir elemen sehingga konten yang tidak tertampung akan ditampilkan dengan scroll bar -->
+
+    <!--auto
+       Sama seperti scroll, hanya jika tidak terjadi overflow, nilai visible yang akan diterapkan -->
+  </body>
+</html>
