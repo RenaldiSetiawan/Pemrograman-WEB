@@ -1,0 +1,17 @@
+> Content
+  Content atau konten merupakan sebuah inti dari kotak elemen 
+  yang merupakan konten dari elemen itu sendiri.
+
+
+> Padding
+  Area yang menjadi jarak antara border elemen dengan konten yang ditampilkan. 
+  Ketika kita menerapkan background-color, warna tersebut diterapkan pada area padding.
+
+> Border
+  Border merupakan garis yang mencakup konten beserta padding
+
+> Margin
+  Berbeda dengan padding, margin merupakan area jarak di luar border
+
+> Edge of Element
+  Edge of element merupakan batas dari suatu elemen. Di dalamnya terdapat margin, border, padding, dan konten
