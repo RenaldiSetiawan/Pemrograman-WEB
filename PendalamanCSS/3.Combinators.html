@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      img + p {
+        color: green;
+      }
+
+      img ~ p {
+        color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Combinators: Adjacent Sibling Selector dan General Sibling Selector -->
+
+    <!-- Adjacent Sibling Selector (+) -->
+    <!-- menggabungkan dua buah basic selector dengan menggunakan tanda + di antara keduanya -->
+    <h1>Adjacent Sibling Selector</h1>
+    <p>
+      Ini merupakan paragraf pertama. Rule styling tidak akan diterapkan pada
+      elemen paragraf ini.
+    </p>
+    <img src="assets/img/google.png" alt="g Dicoding Logo" width="400px" />
+    <p>
+      Ini merupakan paragraf kedua dan ditetapkan setelah elemen gambar. Maka
+      paragraf ini seharusnya menerapkan rule dengan menampilkan teks berwarna
+      hijau.
+    </p>
+    <p>
+      Ini merupakan paragraf ketiga. Letaknya memang setelah elemen gambar,
+      Namun, tidak diletakkan persis setelahnya, sehingga rule tidak akan
+      diterapkan pada elemen ini.
+    </p>
+
+    <!-- General Sibling Selector (~) -->
+    <!-- General Sibling Selector menggunakan simbol tilda (~) untuk menetapkan elemennya -->
+    <h1>General Sibling Selector</h1>
+    <p>
+      Ini merupakan paragraf pertama. Rule styling tidak akan diterapkan pada
+      elemen paragraf ini.
+    </p>
+    <img
+      src="assets/img/google.png"
+      alt="Logo Dicoding"
+      width="400px"
+    />
+    <p></p>
+  </body>
+</html>
