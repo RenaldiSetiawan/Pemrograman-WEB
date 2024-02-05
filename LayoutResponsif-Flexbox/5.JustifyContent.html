@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Justify Content</title>
+
+    <style>
+      .box {
+        width: 200px;
+        height: 100px;
+
+        margin-bottom: 8px;
+      }
+
+      .box:nth-child(odd) {
+        background-color: salmon;
+      }
+
+      .box:nth-child(even) {
+        background-color: lime;
+      }
+
+      .flex-start {
+        display: flex;
+
+        justify-content: flex-start;
+      }
+
+      .flex-end {
+        display: flex;
+
+        justify-content: flex-end;
+      }
+
+      .flex-center {
+        display: flex;
+
+        justify-content: center;
+      }
+
+      .Space-between {
+        display: flex;
+        justify-content: space-between;
+      }
+      .Space-around {
+        display: flex;
+        justify-content: space-around;
+      }
+      .Space-evenly {
+        display: flex;
+        justify-content: space-evenly;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <!-- Flex-start: peletakan child element akan dimulai dari main-start -->
+      <h1>Justify Content: Flex-start</h1>
+      <div class="flex-start">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+      </div>
+
+      <!-- Flex-end: peletakan child element dimulai dari main-end. -->
+      <h1>Justify Content: Flex-end</h1>
+      <div class="flex-end">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+      </div>
+
+      <!-- Center: child element akan diletakkan di tengah parent child. -->
+      <h1>Center</h1>
+      <div class="flex-center">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+      </div>
+
+      <!-- Space-between: child element akan tersusun secara merata, elemen pertama berada di tepi main-start dan elemen kedua berada di tepi main-end. Jika child element lebih dari dua, elemen lainnya akan didistribusikan berada di tengah dengan jarak yang sama -->
+      <h1>Space-between</h1>
+      <div class="Space-between">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+      </div>
+
+      <!-- Space-around: setiap child element akan memiliki panjang celah yang sama pada sisi horizontal. -->
+      <h1>Space-around</h1>
+      <div class="Space-around">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+      </div>
+
+      <!-- Space-evenly: setiap child element akan memiliki jarak yang setara, termasuk jarak ke tepi main-start dan main-end -->
+      <h1>Space-evenly</h1>
+      <div class="Space-evenly">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+      </div>
+    </main>
+  </body>
+</html>

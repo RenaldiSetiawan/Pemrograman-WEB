@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      .container {
+        display: flex;
+        gap: 1rem; /* diterapkan secara vertikal dan horizontal dengan nilai yang sama */
+        gap: 1rem 2rem; /* diterapkan secara vertikal dan horizontal */
+        row-gap: 1rem; /* diterapkan secara horizontal */
+        column-gap: 1rem; /* diterapkan secara vertikal */
+      }
+
+      .box {
+        width: 100px;
+        height: 100px;
+      }
+
+      .box:nth-child(odd) {
+        background-color: salmon;
+      }
+
+      .box:nth-child(even) {
+        background-color: lime;
+      }
+
+      .flex {
+        display: flex;
+
+        flex-wrap: wrap;
+
+        /* Silakan coba seluruh nilainya */
+        gap: 16px;
+        /*gap: 16px 24px;*/
+        /*row-gap: 16px;*/
+        /*column-gap: 24px;*/
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Biasanya kita akan mengandalkan properti margin dalam hal ini -->
+    <!-- cara yang lebih efektif, yaitu menggunakan properti gap -->
+    <main>
+      <div class="flex">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+        <div class="box">6</div>
+        <div class="box">7</div>
+        <div class="box">8</div>
+      </div>
+    </main>
+  </body>
+</html>

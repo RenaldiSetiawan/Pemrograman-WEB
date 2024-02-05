@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flex Direction</title>
+
+    <style>
+      main .flex {
+        background-color: rgba(33, 27, 27, 0.236);
+        height: 5vh;
+      }
+      .flex {
+        display: flex;
+      }
+      .flex-row {
+        flex-direction: row;
+        background-color: rgba(227, 4, 4, 0.793);
+      }
+      .flex-row-reverser {
+        flex-direction: row-reverse;
+        background-color: rgba(33, 27, 27, 0.236);
+      }
+      .col-flex {
+        flex-direction: column;
+        background-color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Properti-Properti pada Flex Container -->
+
+    <!-- Display -->
+    <!-- ika kita ingin mendefinisikan elemen agar disusun sebagai flexible box -->
+    <main>
+      <div class="flex">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+      </div>
+
+      <!-- Row: flex items akan disusun secara horizontal dari kiri ke kanan. -->
+      <div class="flex-row">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+      </div>
+
+      <!-- Row-reverse: flex items akan disusun secara horizontal, tetapi berarah terbalik (kanan ke kiri) -->
+      <div class="flex-row-reverser">
+        <div>1</div>
+        <div>5</div>
+        <div>8</div>
+      </div>
+
+      <!-- Column: flex items akan disusun secara vertikal dari atas ke bawah. -->
+      <div class="col-flex">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+      </div>
+      
+      <!-- Column-reverse: flex items akan disusun secara vertikal, tetapi dengan arah terbalik (bawah ke atas). -->
+    </main>
+  </body>
+</html>

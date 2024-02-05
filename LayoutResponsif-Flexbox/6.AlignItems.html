@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Align Items</title>
+
+    <style>
+      .box {
+        width: 100px;
+        /*height: 100px;*/
+      }
+
+      .box:nth-child(odd) {
+        background-color: salmon;
+      }
+
+      .box:nth-child(even) {
+        background-color: lime;
+      }
+
+      .flex-stretch {
+        height: 50vh;
+        display: flex;
+
+        align-items: stretch;
+        /*align-items: flex-start;*/
+        /*align-items: flex-end;*/
+        /*align-items: center;*/
+        /*align-items: baseline;*/
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Properti ini memiliki perilaku menempatkan flex items sepanjang cross axis -->
+    <main>
+      <!-- Stretch: melebar hingga memenuhi container dalam cross axis -->
+      <h1>align-items: stretch</h1>
+      <div class="flex-stretch">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+      </div>
+    </main>
+  </body>
+</html>
